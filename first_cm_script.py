@@ -4,11 +4,11 @@ auth = {'api_key':'otYR1hX2Rwul5NfryE/34LF2dpnEq54yCYn3ezdGVsEx5m6Ii3JJ0xp1+RpBP
 
 cs=CreateSend(auth)
 clients = cs.clients()
-#subscribers = cs.subscribers()
+subscribers = cs.subscribers()
 
 
-#print(clients)
-#print(clients.client_id)
+print(clients)
+print(clients.client_id)
 
 for cl in clients:
   print("Client: %s" % cl.Name)
