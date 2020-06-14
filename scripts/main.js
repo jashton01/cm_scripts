@@ -27,6 +27,10 @@ myImage.onclick = function() {
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('p');
 
+
+
+/*
+
 function setUserName() {
   let myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
@@ -45,7 +49,6 @@ myButton.onclick = function() {
 }
 
 
-/*
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
     if(mySrc === 'images/cm.png') {
