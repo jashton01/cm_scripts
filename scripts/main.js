@@ -30,7 +30,7 @@ function myTestFunction() {
   .then(data => console.log(data));
 }
 
-
+/*
 function myFunction() {
   fetch('first_cm_script.py', {
   method: 'POST',
@@ -47,7 +47,7 @@ function myFunction() {
   console.error('Error:', error);
 });
 }
-
+*/ 
 
 /*
 myImage.onclick = function() {
