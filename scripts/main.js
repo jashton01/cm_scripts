@@ -12,6 +12,35 @@ let myImage = document.querySelector('img');
 console.log(myImage);
 let myNavBar = document.querySelector('nav');
 console.log(myNavBar);
+let myDescriptionClass = document.querySelector('.description');
+console.log(myDescriptionClass);
+
+// Set up form interceptor
+const form = document.querySelector('.btn btn-secondary btn-block')
+console.log(form);
+
+document.getElementById("client_creator").addEventListener("submit", myFunction);
+
+let data = { username: 'example' };
+
+
+function myFunction() {
+  fetch('first_cm_script.py', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify(data),
+})
+.then(response => response.json())
+.then(data => {
+  console.log('Success:', data);
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+}
+
 
 /*
 myImage.onclick = function() {

@@ -14,7 +14,7 @@ my_subscriber = Subscriber(client_auth)
 
 custom_fields = [{"Key": 'website', "Value": 'http://example.com/'}]
 
-my_subscriber.add("7c480b336839fbba731ca50c5d269666", "jashton+api10@sailthru.com", "Subscriber", custom_fields, True, "yes")
+my_subscriber.add("7c480b336839fbba731ca50c5d269666", "jashton+scriptrun@sailthru.com", "James", custom_fields, True, "yes")
 
 #my_client = Client(account_auth)
 
