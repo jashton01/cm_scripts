@@ -12,6 +12,7 @@ let myImage = document.querySelector('img');
 console.log(myImage);
 let myNavBar = document.querySelector('nav');
 console.log(myNavBar);
+
 let myDescriptionClass = document.querySelector('.description');
 console.log(myDescriptionClass);
 
