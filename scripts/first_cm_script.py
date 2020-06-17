@@ -10,12 +10,12 @@ client_auth = {'api_key':'otYR1hX2Rwul5NfryE/34LF2dpnEq54yCYn3ezdGVsEx5m6Ii3JJ0x
 #my_list.create("2bd21ec1091ba743b483563a25062a61", "API List 4", "", False, "")
 
 
-my_subscriber = Subscriber(client_auth)
+#my_subscriber = Subscriber(client_auth)
 
-custom_fields = [{"Key": 'website', "Value": 'http://example.com/'}]
+#custom_fields = [{"Key": 'website', "Value": 'http://example.com/'}]
 
-my_subscriber.add("7c480b336839fbba731ca50c5d269666", "jashton+api10@sailthru.com", "Subscriber", custom_fields, True, "yes")
+#my_subscriber.add("7c480b336839fbba731ca50c5d269666", "jashton+api3@sailthru.com", "Subscriber", custom_fields, True, "yes")
 
-#my_client = Client(account_auth)
+my_client = Client(account_auth)
 
-#my_client.create("Z API Test", "(GMT+10:00) Canberra, Melbourne, Sydney", "Australia")
+my_client.create("Z API Test Client", "(GMT+10:00) Canberra, Melbourne, Sydney", "Australia")
