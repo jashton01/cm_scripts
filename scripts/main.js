@@ -28,6 +28,7 @@ function myTestFunction() {
   fetch('https://example.com/movies.json')
   .then(response => response.json())
   .then(data => console.log(data));
+  .then(data => console.log(response));
 }
 
 /*
