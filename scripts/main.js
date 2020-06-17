@@ -22,7 +22,7 @@ console.log(form);
 
 document.getElementById("client_creator").addEventListener("submit", myFunction);
 
-let data = { username: 'example' };
+let data = { 'username': 'example' };
 
 
 function myFunction() {
