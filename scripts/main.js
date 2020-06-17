@@ -47,7 +47,7 @@ function myFunction() {
   console.error('Error:', error);
 });
 }
-*/ 
+*/
 
 /*
 myImage.onclick = function() {
