@@ -27,11 +27,11 @@ let data = { 'username': 'example' };
 
 function myFunction() {
   fetch('first_cm_script.py', {
-  method: 'POST',
-  headers: {
+  'method': 'POST',
+  'headers': {
     'Content-Type': 'application/json',
   },
-  body: JSON.stringify(data),
+  'body': JSON.stringify(data),
 })
 .then(response => response.json())
 .then(data => {
