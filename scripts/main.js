@@ -25,7 +25,9 @@ document.getElementById("client_creator").addEventListener("submit", myTestFunct
 let data = { 'username': 'example' };
 
 function myTestFunction() {
-  fetch('https://example.com/movies.json')
+  fetch('https://example.com/movies.json'){
+    mode: 'no-cors'
+  }
   .then(response => response.json())
   .then(data => console.log(data));
   .then(data => console.log(response));
