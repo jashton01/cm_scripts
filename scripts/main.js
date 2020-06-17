@@ -20,15 +20,21 @@ console.log(myDescriptionClass);
 const form = document.querySelector('.btn btn-secondary btn-block')
 console.log(form);
 
-document.getElementById("client_creator").addEventListener("submit", myFunction);
+document.getElementById("client_creator").addEventListener("submit", myTestFunction);
 
 let data = { 'username': 'example' };
+
+function myTestFunction() {
+  fetch('http://example.com/movies.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
 
 
 function myFunction() {
   fetch('first_cm_script.py', {
-  'method': 'POST',
-  'headers': {
+  method: 'POST',
+  headers: {
     'Content-Type': 'application/json',
   },
   'body': JSON.stringify(data),
