@@ -27,7 +27,7 @@ let data = { 'username': 'example' };
 function myFunction() {
   fetch('first_cm_script.py', {
   method: 'POST',
-  body': JSON.stringify(data),
+  body: JSON.stringify(data),
   headers: {
     'Content-Type': 'application/json'
   }
