@@ -20,8 +20,6 @@ console.log(myDescriptionClass);
 const form = document.querySelector('.btn btn-secondary btn-block')
 console.log(form);
 
-document.getElementById("client_creator").addEventListener("submit", myTestFunction);
-
 let data = { 'username': 'example' };
 
 function myTestFunction() {
@@ -32,14 +30,14 @@ function myTestFunction() {
   .then(data => console.log(response));
 }
 
-/*
+
 function myFunction() {
   fetch('first_cm_script.py', {
   method: 'POST',
+  body': JSON.stringify(data),
   headers: {
-    'Content-Type': 'application/json',
-  },
-  'body': JSON.stringify(data),
+    'Content-Type': 'application/json'
+  }
 })
 .then(response => response.json())
 .then(data => {
@@ -49,7 +47,12 @@ function myFunction() {
   console.error('Error:', error);
 });
 }
-*/
+
+document.getElementById("client_creator").addEventListener("submit", myFunction);
+
+
+
+
 
 /*
 myImage.onclick = function() {
