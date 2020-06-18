@@ -20,7 +20,7 @@ console.log(myDescriptionClass);
 const form = document.querySelector('.btn btn-secondary btn-block')
 console.log(form);
 
-let data = { 'username': 'example' };
+let data = {'username':'example'};
 
 
 
