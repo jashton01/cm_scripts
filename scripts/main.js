@@ -16,15 +16,14 @@ let myNavBar = document.querySelector('nav');
 let myDescriptionClass = document.querySelector('.description');
 //console.log(myDescriptionClass);
 
-// Set up form interceptor
-const form = document.querySelector('.btn btn-secondary btn-block');
-//console.log(form);
-
-
 function log_customer_name() {
   const customer_name = document.querySelector('#prospect_country').value;
   console.log('Prospect Country: ', customer_name);
 }
+
+// Set up form interceptor
+
+//const form = document.querySelector('.btn btn-secondary btn-block');
 document.getElementById("client_creator").addEventListener("submit", log_customer_name);
 
 
