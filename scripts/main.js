@@ -14,7 +14,7 @@ let myNavBar = document.querySelector('nav');
 //console.log(myNavBar);
 
 let myDescriptionClass = document.querySelector('.description');
-c//onsole.log(myDescriptionClass);
+//console.log(myDescriptionClass);
 
 // Set up form interceptor
 const form = document.querySelector('.btn btn-secondary btn-block');
