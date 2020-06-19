@@ -16,7 +16,7 @@ let myNavBar = document.querySelector('nav');
 let myDescriptionClass = document.querySelector('.description');
 //console.log(myDescriptionClass);
 
-function log_customer_name() {
+function postClientData() {
   const customer_name = document.querySelector('#prospect_country').value;
   console.log('Prospect Country: ', customer_name);
 }
@@ -24,7 +24,7 @@ function log_customer_name() {
 // Set up form interceptor
 
 //const form = document.querySelector('.btn btn-secondary btn-block');
-document.getElementById("client_creator").addEventListener("submit", log_customer_name);
+document.getElementById("client_creator").addEventListener("submit", postClientData);
 
 
 
