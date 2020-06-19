@@ -20,12 +20,12 @@ console.log(myDescriptionClass);
 const form = document.querySelector('.btn btn-secondary btn-block');
 console.log(form);
 
-const customer_name = document.querySelector('#prospect_country').value;
 
-function echo_customer_name() {
-  echo(customer_name);
+function log_customer_name() {
+  const customer_name = document.querySelector('#prospect_country').value;
+  console.log('Customer name: ', customer_name);
 }
-document.getElementById("client_creator").addEventListener("submit", echo_customer_name);
+document.getElementById("client_creator").addEventListener("submit", log_customer_name);
 
 
 
