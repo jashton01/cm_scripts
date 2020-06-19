@@ -20,7 +20,31 @@ let myDescriptionClass = document.querySelector('.description');
 function postClientData() {
   const customer_name = document.querySelector('#prospect_country').value;
   console.log('Prospect Country: ', customer_name);
-}
+  fetch('/server', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({data: customer_name})
+  })
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+
+      response.json().then(function(data) {
+        console.log('Response:', data);
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch error:', err);
+  });
+};
 
 // Set up form interceptor
 
