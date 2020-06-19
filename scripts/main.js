@@ -9,16 +9,16 @@ document.querySelector('html').onclick = function() {
 */
 
 let myImage = document.querySelector('img');
-console.log(myImage);
+//console.log(myImage);
 let myNavBar = document.querySelector('nav');
-console.log(myNavBar);
+//console.log(myNavBar);
 
 let myDescriptionClass = document.querySelector('.description');
-console.log(myDescriptionClass);
+c//onsole.log(myDescriptionClass);
 
 // Set up form interceptor
 const form = document.querySelector('.btn btn-secondary btn-block');
-console.log(form);
+//console.log(form);
 
 
 function log_customer_name() {
