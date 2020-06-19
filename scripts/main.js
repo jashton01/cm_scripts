@@ -23,7 +23,7 @@ const form = document.querySelector('.btn btn-secondary btn-block');
 
 function log_customer_name() {
   const customer_name = document.querySelector('#prospect_country').value;
-  console.log('Customer name: ', customer_name);
+  console.log('Prospect Country: ', customer_name);
 }
 document.getElementById("client_creator").addEventListener("submit", log_customer_name);
 
