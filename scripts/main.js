@@ -20,7 +20,7 @@ let myDescriptionClass = document.querySelector('.description');
 function postClientData() {
   const customer_name = document.querySelector('#prospect_country').value;
   console.log('Prospect Country: ', customer_name);
-  fetch('script1', {
+  fetch('script1.py', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
