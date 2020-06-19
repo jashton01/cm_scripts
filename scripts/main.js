@@ -53,7 +53,7 @@ function myFunction() {
 }
 */
 
-document.getElementById("client_creator").addEventListener("submit", myFunction);
+//document.getElementById("client_creator").addEventListener("submit", myFunction);
 
 
 
