@@ -16,10 +16,10 @@ let myNavBar = document.querySelector('nav');
 let myDescriptionClass = document.querySelector('.description');
 //console.log(myDescriptionClass);
 
-function postClientData = () => {
+
+function postClientData() {
   const customer_name = document.querySelector('#prospect_country').value;
   console.log('Prospect Country: ', customer_name);
-
 }
 
 // Set up form interceptor
