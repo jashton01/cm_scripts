@@ -17,12 +17,23 @@ let myDescriptionClass = document.querySelector('.description');
 console.log(myDescriptionClass);
 
 // Set up form interceptor
-const form = document.querySelector('.btn btn-secondary btn-block')
+const form = document.querySelector('.btn btn-secondary btn-block');
 console.log(form);
 
+const customer_name = document.querySelector('#prospect_country').value;
+
+function echo_customer_name() {
+  echo(customer_name);
+}
+document.getElementById("client_creator").addEventListener("submit", echo_customer_name);
+
+
+
+
+// My old fetch() code
+/*
+
 let data = {'username':'example'};
-
-
 
 function myFunction() {
   fetch('first_cm_script.py', {
@@ -40,6 +51,7 @@ function myFunction() {
   console.error('Error:', error);
 });
 }
+*/
 
 document.getElementById("client_creator").addEventListener("submit", myFunction);
 
